@@ -11,6 +11,9 @@
 #if __has_include(<Sentry/Sentry.h>)
 #import <Sentry/SentryCrash.h>
 #import <Sentry/SentryCrashInstallation.h>
+#elif __has_include(<SentryCrash/Recording/SentryCrash.h>)
+#import <SentryCrash/Recording/SentryCrash.h>
+#import <SentryCrash/Installations/SentryCrashInstallation.h>
 #else
 #import "SentryCrash.h"
 #import "SentryCrashInstallation.h"
